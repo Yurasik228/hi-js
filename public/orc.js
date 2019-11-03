@@ -3,7 +3,7 @@ function playS( id ) {
     const divkey= document.getElementById('k'+id);
     audio.currentTime = 0;
     audio.play();
-    divkey.className = 'acrive';
+    divkey.className = 'active';
 
 }
 function clearS( id ){
@@ -26,9 +26,10 @@ function myKeysDw( e ){
 }
 function myKeysUp( e ){
     switch (e.keyCode) {
-        case 65: clearS ('01'); break;
+        case 65: clears ('01'); break;
         case 83: clearS ('02'); break;
         case 68: clearS ('03'); break;
         default: console.log(e);
             break;
+    }
 }
