@@ -1,11 +1,10 @@
-div#Keys div {
-    float: lest;
-    width: 30px;
-    height: 30px;
-    border: 1px solid red;
+div#keys div {
+    float: left;
+    width: 70px;
+    height: 70px;
+    border: 120px solid brown;
     margin: 10px;
 }
-
-div#Keys div.active {
-    background-color: aqua;
+div#keys div.active {
+    background-color: gold;
 }

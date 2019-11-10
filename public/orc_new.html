@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="orc.css">
 </head>
-<body onkeydown="myKeysDown( event )" onkeydown="orc.css"
-onkeyup="myKeysUp ( event )" onkeyup="orc.css">
+<body onkeydown="myKeysDown(event)" onkeyup="myKeysUp(event)">
 
 
     <h1>ORCHESTRA</h1>
 
     <div id="keys">
-        <div data-key="65" id='k1'>A</div>
-        <div id='k2'>S</div>
+        <div data-key="65">A</div>
+        <div data-key="83">S</div>
     </div>
 
     
@@ -22,8 +22,8 @@ onkeyup="myKeysUp ( event )" onkeyup="orc.css">
 
     <audio data-key="65" id="snd01" src="sound/boom.wav"></audio>
     <audio data-key="83" id="snd02" src="sound/clap.wav"></audio>
-    <audio id="snd03" src="sound/hihat.wav"></audio>
 
-    <script src="orc.js"></script>
+
+    <script src="orc_new.js"></script>
 </body>
 </html>

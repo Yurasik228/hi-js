@@ -1,0 +1,26 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+table{
+    border: 1px solid aquamarine;
+    border-collapse: collapse;
+       
+}
+
+td{
+    border: 20px solid aquamarine;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+}
