@@ -18,17 +18,19 @@ td{
     
     
 }
-td.box-01{
+.box-01{
     background-image: url(images/box1.png);
 
 }
 
-td.box-02{
+.box-02{
     background-image: url(images/box2.png);
 
 }
 
-td.box-02z{
+
+
+.box-02z{
     transition: background-size 2s ease-in;
     -moz-transition: background-size 2s ease-in;
     -ms-transition: background-size 2s ease-in;
@@ -37,3 +39,13 @@ td.box-02z{
     
     }
 
+.movebox {
+    border: 1px solid white;
+    width: 90px;
+    height: 70px;
+    position: absolute;
+    z-index: 10;
+    left: 407px;
+    top: 680px;
+    transition: left 2s linear;
+}
