@@ -7,7 +7,7 @@ table {
     background-size: cover;
 }
 
-.td {
+td {
     border: 1px solid white;
     width: 60px;
     height: 60px;
@@ -19,7 +19,7 @@ table {
 
 .box {
     border: 1px solid white;
-    position:absolute;
+    position: absolute;
     width: 60px;
     height: 60px;
     text-align: center;
@@ -45,7 +45,7 @@ table {
 }
 
 .box-5 {
-    background-color:green;
+    background-color: green;
 }
 
 .box-6 {
@@ -55,10 +55,11 @@ table {
 .z {
     background-size: 0px;
 }
+
 .box-999 {
     background-color: black;
 }
 
-buttons {
+#buttons {
     text-align: center;
 }
