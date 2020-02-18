@@ -1,0 +1,64 @@
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-image: url(image/bgMoveTheBox.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.td {
+    border: 1px solid white;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.box {
+    border: 1px solid white;
+    position:absolute;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.box-1 {
+    background-image: url(image/box1.png);
+}
+
+.box-2 {
+    background-image: url(image/box2.png);
+}
+
+.box-3 {
+    background-color: brown;
+}
+
+.box-4 {
+    background-color: gray;
+}
+
+.box-5 {
+    background-color:green;
+}
+
+.box-6 {
+    background-color: yellow;
+}
+
+.z {
+    background-size: 0px;
+}
+.box-999 {
+    background-color: black;
+}
+
+buttons {
+    text-align: center;
+}

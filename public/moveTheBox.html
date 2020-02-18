@@ -1,35 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="move-the-box.css">
-    <link rel="stylesheet" href="move-the-box-2.css">
-    <style>
-        .movebox{
-    border: 1px solid white;
-    width: 90px;
-    height: 70px;
-    text-align: center;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    z-index: 10;
-    left: 490px;
-    top: 679px;
-    transition: left 500ms linear;
-        }
-    </style>
-</head>
+    <link rel="stylesheet" href="game-base.css">
+    <link rel="stylesheet" href="moveTheBox.css">
+
+   </head>
+
 <body>
-    
-    <table id="move-the-box">
+
+    <table id="move-the-box" onclick="boardClick( event )">
         <tr>
-            <td class="box-01"></td>
-            <td class="box-02z"></td>
-            <td class=""></td>
+            <td id="td1"></td>
+            <td></td>
+            <td></td>
             <td></td>
             <td></td>
             <td></td>
@@ -99,8 +87,22 @@
             <td></td>
         </tr>
     </table>
-    <div class="movebox">
-        
 
+    <script src="jquery-3.4.1.min.js"></script>
+
+    <!--<div class="box-1 movebox">
+
+    </div>
+
+    <div id="buttons">
+        <button onclick="moveLeft()">L</button> <br>
+        <button onclick="moveRight()">R</button>
+        <button onclick="moveUp()"> U </button> <br>
+        <button onclick="moveDown()">D</button>
+    </div>
+
+    <script src="moveTheBox.js"></script>>
+    
 </body>
+
 </html>

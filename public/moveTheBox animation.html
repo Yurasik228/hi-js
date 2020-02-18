@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="move-the-box.css">
-    <link rel="stylesheet" href="move-the-box-2.css">
-</head>
+    <link rel="stylesheet" href="game-base.css">
+    <link rel="stylesheet" href="moveTheBox.css">
+
+   </head>
+
 <body>
-    
-    <table id="move-the-box">
+
+    <table id="move-the-box" onclick="boardClick( event )">
         <tr>
-            <td class="box-01"></td>
-            <td class="box-02z"></td>
-            <td class=""></td>
+            <td id="td1"></td>
+            <td></td>
+            <td></td>
             <td></td>
             <td></td>
             <td></td>
@@ -84,8 +87,48 @@
             <td></td>
         </tr>
     </table>
-    <div class="box"
-    
 
+    <button onclick="testMove()">Click</button>
+
+    <script src="jquery-3.4.1.min.js"></script>
+
+    <script>
+    
+        function testMove(){
+            moveBox('#td1','#td2','box-1')
+            moveBox('#td2','#td1','box-2')
+        }
+        function moveBox(s, d, b){
+            let S = $('s');
+            let D = $('d');
+            let offS = $S.offset();
+            let offD = $d.offset();
+            console.log( offS, offD );  
+            let $BOX = $('<div>')
+                .addClass('box')
+                .addClass(b)
+                .css( offS )
+                .appendTo('body')
+            $BOX.animate( offD, 1000, function(){
+                $BOX.remove();
+            });
+        }
+
+    </script>
+    <!--
+    <div class="box-1 movebox">
+
+    </div>
+
+    <div id="buttons">
+        <button onclick="moveLeft()">L</button> <br>
+        <button onclick="moveRight()">R</button>
+        <button onclick="moveUp()"> U </button> <br>
+        <button onclick="moveDown()">D</button>
+    </div>
+
+    <script src="moveTheBox.js"></script>-->
+    
 </body>
+
 </html>
