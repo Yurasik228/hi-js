@@ -1,7 +1,7 @@
 table {
     border: 1px solid black;
     border-collapse: collapse;
-    background-image: url(image/bgMoveTheBox.jpg);
+    background-image: url(image/chungus.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -9,8 +9,8 @@ table {
 
 td {
     border: 1px solid white;
-    width: 60px;
-    height: 60px;
+    width: 75px;
+    height: 75px;
     text-align: center;
     background-repeat: no-repeat;
     background-position: center center;
@@ -20,8 +20,8 @@ td {
 .box {
     border: 1px solid white;
     position: absolute;
-    width: 60px;
-    height: 60px;
+    width: 81px;
+    height: 81px;
     text-align: center;
     background-repeat: no-repeat;
     background-position: center center;
@@ -61,5 +61,56 @@ td {
 }
 
 #buttons {
-    text-align: center;
+    display: grid;
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    top: 396px;
+    left: 288px;
+    font-weight: bolder;
+    font-size: 30px ;
+    color: gold;
+    
 }
+
+div#buttons div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 27px;
+    height: 27px;
+    cursor: pointer;
+
+ 
+
+}
+
+div#btnU {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+
+}
+
+div#btnD {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 13;
+}
+
+div#btnL {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+div#btnR {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+            
